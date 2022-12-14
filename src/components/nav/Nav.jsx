@@ -3,8 +3,9 @@ import './nav.css';
 import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
-import { RiServiceLine } from 'react-icons/ri';
+
 import { BiMessageSquareDetail } from 'react-icons/bi';
+import { HiOutlineSquares2X2 } from 'react-icons/hi2';
 import { useState } from 'react';
 
 function Nav() {
@@ -39,13 +40,13 @@ function Nav() {
 				<BiBook />
 			</a>
 			<a
-				href='#services'
+				href='#portfolio'
 				onClick={() => {
-					setActive('#services');
+					setActive('#portfolio');
 				}}
-				className={active === '#services' ? 'active' : ''}
+				className={active === '#portfolio' ? 'active' : ''}
 			>
-				<RiServiceLine />
+				<HiOutlineSquares2X2 />
 			</a>
 			<a
 				href='#contact'
